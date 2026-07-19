@@ -184,6 +184,23 @@
     padding: 0 20px;
     line-height: 1.6;
   }
+
+  .shape-circle { position: absolute; border-radius: 50%; }
+  .shape-square { position: absolute; }
+  .shape-triangle {
+    position: absolute;
+    width: 0; height: 0;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+  }
+  header { position: relative; overflow: hidden; }
+  .deco-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin: 22px 0;
+  }
 </style>
 </head>
 <body>
@@ -192,6 +209,10 @@
   <div class="eyebrow">KISAS SUMMER CAMP 1기</div>
   <h1>KISAS 여름캠프 사전 안내</h1>
   <p>새 안내가 추가될 때마다 이 페이지에서<br>계속 업데이트됩니다. 이 링크 하나만 저장해두시면 됩니다.</p>
+
+  <div class="shape-circle" style="width:34px;height:34px;background:var(--coral);top:24px;right:70px;"></div>
+  <div class="shape-square" style="width:26px;height:26px;background:var(--yellow);top:60px;right:34px;transform:rotate(8deg);"></div>
+  <div class="shape-triangle" style="border-bottom:30px solid var(--teal);top:22px;right:110px;"></div>
 </header>
 
 <main>
@@ -248,6 +269,12 @@
         <div class="callout"><b>가져오지 말아주세요</b><br>고가의 귀중품 및 분실 위험이 있는 물품은 지참을 자제해 주세요. 기숙사 생활 환경을 고려하여 과도한 간식 반입도 자제 부탁드립니다.</div>
       </div>
     </div>
+  </div>
+
+  <div class="deco-row">
+    <div style="width:10px;height:10px;border-radius:50%;background:var(--coral);"></div>
+    <div style="width:10px;height:10px;background:var(--teal);transform:rotate(45deg);"></div>
+    <div style="width:0;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-bottom:14px solid var(--yellow);"></div>
   </div>
 
   <div class="section" id="sec2">
