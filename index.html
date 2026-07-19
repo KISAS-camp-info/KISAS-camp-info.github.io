@@ -33,8 +33,6 @@
     color: var(--cream);
     padding: 44px 24px 34px;
     text-align: center;
-    border-bottom-left-radius: 36px;
-    border-bottom-right-radius: 36px;
   }
   header .eyebrow {
     color: var(--yellow);
@@ -53,6 +51,15 @@
     font-size: 13px;
     opacity: 0.72;
     line-height: 1.5;
+  }
+  .content-panel {
+    background: var(--cream);
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    margin-top: -28px;
+    padding-top: 28px;
+    position: relative;
+    z-index: 2;
   }
   main {
     max-width: 480px;
@@ -220,11 +227,10 @@
   <div class="shape-circle" style="width:36px;height:36px;background:var(--teal);top:-12px;left:-12px;"></div>
 </header>
 
+<div class="content-panel">
 <main>
 
-  <div class="bg-shape" style="width:70px;height:70px;border-radius:50%;background:var(--teal);top:140px;left:-24px;"></div>
-  <div class="bg-shape" style="width:50px;height:50px;background:var(--coral);top:260px;right:-18px;transform:rotate(15deg);"></div>
-  <div class="bg-shape" style="width:0;height:0;border-left:30px solid transparent;border-right:30px solid transparent;border-bottom:52px solid var(--yellow);bottom:40px;left:-16px;transform:rotate(-10deg);"></div>
+  <div class="bg-shape" style="width:60px;height:60px;border-radius:50%;background:var(--teal);bottom:-20px;right:-20px;"></div>
 
   <div class="section" id="sec1">
     <button class="section-toggle" onclick="toggle('sec1')">
@@ -328,6 +334,7 @@
   </div>
 
 </main>
+</div>
 
 <footer>
   문의사항은 카카오톡 채널 또는<br>
