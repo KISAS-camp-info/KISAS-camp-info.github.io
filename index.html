@@ -28,12 +28,12 @@
   body {
     font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Noto Sans KR", sans-serif;
     color: var(--navy);
-    padding-bottom: 110px;
+    padding-bottom: 170px;
   }
   header {
     background: var(--navy);
     color: var(--cream);
-    padding: 44px 24px 56px;
+    padding: 44px 24px 72px;
     text-align: center;
   }
   header .eyebrow {
@@ -58,7 +58,7 @@
     background: var(--cream);
     border-top-left-radius: 32px;
     border-top-right-radius: 32px;
-    margin-top: -16px;
+    margin-top: -32px;
     padding-top: 28px;
     position: relative;
     z-index: 2;
@@ -70,7 +70,8 @@
     position: relative;
   }
   .bg-shape { position: absolute; z-index: 0; }
-  main > .section, main > footer { position: relative; z-index: 1; }
+  main > .section { position: relative; z-index: 1; }
+  footer { position: relative; z-index: 5; }
 
   .section {
     background: #ffffff;
@@ -225,7 +226,7 @@
   <p>새 안내가 추가될 때마다 이 페이지에서<br>계속 업데이트됩니다. 이 링크 하나만 저장해두시면 됩니다.</p>
 
   <div class="shape-circle" style="width:56px;height:56px;background:var(--coral);top:-16px;right:-16px;"></div>
-  <div class="shape-square" style="width:40px;height:40px;background:var(--yellow);top:64px;right:-10px;transform:rotate(10deg);"></div>
+  <div class="shape-square" style="width:40px;height:40px;background:var(--yellow);bottom:44px;right:-10px;transform:rotate(10deg);"></div>
   <div class="shape-triangle" style="border-bottom:46px solid var(--teal);top:-8px;left:-14px;transform:rotate(-15deg);"></div>
 </header>
 
@@ -233,8 +234,8 @@
 <main>
 
   <div class="bg-shape" style="width:46px;height:46px;background:var(--coral);bottom:60px;right:-16px;transform:rotate(10deg);"></div>
-  <div class="bg-shape" style="width:0;height:0;border-left:22px solid transparent;border-right:22px solid transparent;border-bottom:38px solid var(--yellow);top:70px;left:-14px;transform:rotate(-12deg);"></div>
-  <div class="bg-shape" style="width:52px;height:52px;border-radius:50%;background:var(--teal);bottom:-90px;left:40%;transform:translateX(-50%);"></div>
+  <div class="bg-shape" style="width:0;height:0;border-left:22px solid transparent;border-right:22px solid transparent;border-bottom:38px solid var(--yellow);top:36px;left:-14px;transform:rotate(-12deg);"></div>
+  <div class="bg-shape" style="width:52px;height:52px;border-radius:50%;background:var(--teal);bottom:-140px;left:40%;transform:translateX(-50%);z-index:0;"></div>
 
   <div class="section" id="sec1">
     <button class="section-toggle" onclick="toggle('sec1')">
