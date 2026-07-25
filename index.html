@@ -398,7 +398,7 @@
 
   <div class="section" id="sec4">
     <button class="section-toggle" onclick="toggle('sec4')">
-      <span class="badge-new">NEW</span>
+      <span class="dot" style="background:var(--coral)"></span>
       <span class="toggle-text">
         <span class="label">D-3 · 7/24</span>
         <h2>전체 타임테이블</h2>
@@ -434,14 +434,40 @@
     </div>
   </div>
 
-  <div class="section locked" id="sec5">
-    <button class="section-toggle" disabled>
-      <span class="dot" style="background:#ccc"></span>
+  <div class="section" id="sec5">
+    <button class="section-toggle" onclick="toggle('sec5')">
+      <span class="badge-new">NEW</span>
       <span class="toggle-text">
-        <span class="label">안내 예정</span>
+        <span class="label">D-2 · 7/25</span>
         <h2>비상연락 · 의료 안내</h2>
       </span>
+      <svg class="chevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
     </button>
+    <div class="section-body">
+      <div class="section-inner">
+        <h3 class="subhead">의료 체계</h3>
+        <div class="info-row"><span class="k">주간</span><span class="v">교내 보건실</span></div>
+        <div class="info-row"><span class="k">저녁</span><span class="v">중앙메디칼약국 (031-675-0130)</span></div>
+        <div class="info-row"><span class="k">심야 · 응급</span><span class="v">안성병원 (031-8046-5000)</span></div>
+        <div class="callout">안성병원은 경기도의료원 산하로, 24시간 응급실을 운영합니다.</div>
+
+        <h3 class="subhead">비상연락 프로토콜</h3>
+        <ul class="items">
+          <li><span class="check">-</span>사고·질병 등 응급 상황 발생 시, 시간과 관계없이 담당 스태프가 즉시 보호자님께 연락드립니다.</li>
+        </ul>
+        <div class="callout">보호자님께서 먼저 연락 주셔야 하는 응급 상황은 원칙적으로 없습니다. 캠프 측에서 먼저 안내드립니다.</div>
+
+        <h3 class="subhead">일반 문의</h3>
+        <div class="info-row"><span class="k">전화 · 카카오톡</span><span class="v">10:00~19:00</span></div>
+        <div class="info-row"><span class="k">카카오톡 채널</span><span class="v">업무시간 외에도 확인 시 응대</span></div>
+
+        <h3 class="subhead">일일소식</h3>
+        <ul class="items">
+          <li><span class="check">-</span>팀별 카카오톡 단체채팅방을 통해 매일 소식을 전달드립니다.</li>
+        </ul>
+        <div class="callout">단체채팅방은 스태프 공지 전용으로 운영되며, 팀별로 분리되어 있습니다.</div>
+      </div>
+    </div>
   </div>
 
   <div class="section locked" id="sec6">
